@@ -1,0 +1,156 @@
+\documentclass[11pt]{report}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{graphics}
+%\usepackage{pifont}
+\usepackage{color}
+%\usepackage{xcolor}
+\usepackage[table]{xcolor}
+%\definecolor{silver}{RGB}{192,192,192}
+%\usepackage[margin=1in]{geometry}
+\usepackage{float}
+%\usepackage{enumitem}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{subfig}
+%\usepackage[per-mode=fraction]{siunitx}
+%\usepackage{numprint}
+%\usepackage{array}
+%\usepackage{sidecap}
+%\usepackage{wrapfig}
+
+%Justify 
+\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{mathrsfs}
+%\usepackage{mathtools}
+
+\usepackage[french]{babel}
+%\frenchbsetup{StandardLists=true} %alignement
+%\definecolor{silver}{RGB}{192,192,192}
+%\usepackage{hyperref}
+%\usepackage[nottoc]{tocbibind}
+
+\usepackage{amsmath}  %pour les matrices
+
+\usepackage[squaren, Gray, cdot]{SIunits} %Symboles
+
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+
+
+  
+\titleformat{\chapter}[display]
+ {\normalfont\huge\bfseries\filcenter}{\chaptertitlename\ \thechapter}{16pt}{\Huge}
+  
+%\subsubsectionfont{\normalfont\large\itshape\underline}
+
+\begin{document}
+
+\chapter{Calibrage}
+
+\section{Le sténopé}
+Le sténopé modélise une caméra par son centre optique et son plan image. Le modèle sténopé est par hypothèse une approximation au premier ordre du processus de formation d'image. Les images sont formées par projection sur le plan image à travers le centre optique comme illustré à la figure suivante:
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=12cm]{images/stenope.png}
+\caption{Le modèle sténopé}
+\label{fig:figure}
+\end{center}
+\end{figure}
+Soit le point de la scene W dont $\mathbf{w=(x, y, z)}^\top$ est la position et $\tilde{\textbf{w}}$ sont les coordonnees homogenes. Sa projection M dans le plan image est donnee par la matrice de projection $\tilde{\textbf{P}}$:
+\begin{equation}
+\tilde{m} = \tilde{P}\tilde{w}= A[R|t]\tilde{w}
+\end{equation}
+R et t définissent l'orientation et la position du repère caméra dans le référenciel global. A est la matrice des paramètres intrinseques donnée par:
+\[
+A=
+\begin{pmatrix} 
+\alpha_{u} & \gamma & u_{0}\\
+0 & \alpha_{v} & v_{0}\\
+0 & 0 & 1 
+\end{pmatrix}
+\]
+où $\alpha_{u}$=-f$k_{u}$, $\alpha_{v}$=-f$k_{v}$, $\gamma$=f$k_{u}$cot($\theta$), f est la longueur focale en unité métrique, $k_{u}$ et $k_{v}$ sont le nombre de pixels par unité métrique le long des axes horizontaux et verticaux et $\theta$ est l'angle entre les axes u et v. Finalement ($u_{0}$, $u_{0}$) est la position du point principal, soit l'intersection de l'axe optique avec le plan image. En général, le point principal est situé près du centre de l'image. Aussi, l'angle entre les axes u et v est très près de 90\degree, donc  \\ $\gamma$ $\approx$ 0. Une caméra est dite calibrée lorsque sa matrice A est connue.
+
+\subsection{La distorsion optique}
+
+En pratique, il arrive que le modèle sans distorsion présenté précédemment ne soit pas assez précis. On doit alors considérer des paramètres de distorsion optique. Généralement seule la distorsion radiale est utilisée. Soit la position idéale d'un point de l'image \\ $\mathbf{m_{u}=(u_{u}, v_{u})}^\top$ et la position réelle après distorsion $\mathbf{m_{d}=(u_{d}, v_{d})}^\top$ . En faisant référence aux paramètres intrinsèques définis dans la section précédente et considérant un point de la scène situé à la position $\mathbf{w_{c}=(x_{c}, y_{c}, z_{c})}^\top$ dans le repère de la caméra, alors ses coordonnées normalisées dans le plan image sont:
+\begin{align*}
+x_{u} &= \frac{u_{u}-u_{0}}{k_{u}}=f \frac{x_{c}}{z_{c}} \\
+y_{u} &= \frac {v_{u}-v_{0}}{k_{v}}=f \frac {y_{c}}{z_{c}}
+\end{align*}
+et sa distance au point principal est:
+\begin{align*}
+r_{u}^2 &= x_{u}^2+y_{u}^2
+\end{align*}
+Sous l'effet de la distorsion radiale, un point subit une translation de sa position idéale vers sa position après distorsion sur une droite passant par le point principal. Cette composante de la distorsion peut s'exprimer par:
+\begin{align*}
+do_{xr} &= x_{u}\sum k_{i}r_{u}^{2i} \\
+do_{yr} &= y_{u}\sum k_{i}r_{u}^{2i}
+\end{align*}
+Les paramètres de la distorsion radiale sont les coeffcients $\mathbf{d_{r}=(k_{1}, k_{2},..., k_{i},...)}^\top$. Le terme $k_{1}$ est particulièrement dominant.
+En plus de la distorsion radiale, on pourrait aussi considérer la distorsion tangentielle qui correspond au déplacement des centres optiques des lentilles. Contrairement au cas de la distorsion radiale, le déplacement n'est pas sur une droite passant par le point principal. Cette composante de la distorsion peut s'exprimer par:
+\begin{align*}
+do_{xt} &= p_{1}(r_{u}^2+2x_{u}^2)+2p_{2}x_{u}y_{u} \\
+do_{yt} &= p_{2}(r_{u}^2+2y_{u}^2)+2p_{1}x_{u}y_{u}
+\end{align*}
+Les paramètres de la distorsion tangentielle sont les coeffcients $\mathbf{d_{t}=(p_{1}, p_{2})}^\top$. La position après distorsion d'un point de l'image est donnée par:
+\begin{align*}
+u_{d} &= u_{u}+k_{u}(do_{xr}+do_{xt})
+v_{d} &= v_{u}+k_{v}(do_{yr}+do_{yt})
+\end{align*}
+
+\section{Le système de stéréovision}
+La technique stéréoscopique consiste a utiliser plusieurs images du même point, prises de points de vue différents, afin de récupérer l'information 3D. Le systeme qui nous occupe est compose de deux caméras comme illustré à la figure suivante. 
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=11cm]{images/stereo.png}
+\caption{Le système de stéréovision}
+\label{fig:figure}
+\end{center}
+\end{figure}
+Si le référenciel global est placé au centre optique de la première caméra, on a les deux matrices de projection suivantes:
+\begin{align*}
+\tilde{P_{1}} &= A_{1}[I|0] \\
+\tilde{P_{2}} &= A_{2}[R|t]
+\end{align*}
+Les paramètres du système sont donc les paramètres intrinsèques de chacune des caméras ($A_{1}$ et $A_{2}$) et la position de la deuxième caméra par rapport à la première (R et t). Si on connait la position des deux caméras dans un repère global, la position relative de la deuxième caméra est donnée par:
+\[
+\begin{pmatrix} 
+R & t \\
+0 & 1 
+\end{pmatrix}
+=
+\begin{pmatrix} 
+R_{2} & t_{2} \\
+0 & 1 
+\end{pmatrix}
+\begin{pmatrix} 
+R_{1} & t_{1} \\
+0 & 1
+\end{pmatrix}^{-1}
+\]
+Il y a 16 paramètres au total (5 + 5 = 10 paramètres intrinsèques, 3 paramètres de rotation et 3 de translation). On peut aussi être interessé à connaitre la position du système dans le repère arbitraire de la scène, ce qui ajoute 6 autres paramètres et porte le total à 22. Le calibrage d'un système de stéréovision consiste à évaluer ces paramètres.
+
+\section{La géométrie épipolaire}
+La géometrie épipolaire est la relation de base qui se présente entre deux points de vue. Soit la droite passant par les deux centres de projection $C_{1}$ et $C_{2}$ d'un système de stéréovision. Cette droite passe par le point $e_{1}$ dans la première image et par le point $e_{2}$ dans la deuxième image. Ce sont les épipoles, par lesquels passent les lignes épipolaires. Pour chaque point $M_{1}$ dans la première image, le point $M_{2}$ correspondant dans la deuxième image se trouve sur la ligne épipolaire $l_{2M1}$ .
+\section{La matrice fondamentale}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
