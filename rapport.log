@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  5 FEB 2019 16:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.24)  6 FEB 2019 10:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -730,6 +730,21 @@ LaTeX Warning: Label `fig:figure' multiply defined.
 
 LaTeX Warning: Label `fig:figure' multiply defined.
 
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
+
+LaTeX Warning: Label `fig:figure' multiply defined.
+
 )
 \openout1 = `rapport.aux'.
 
@@ -902,152 +917,152 @@ Package pdftex.def Info: images/couvert.jpg  used on input line 96.
 [0
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo_snep.png> <.
-/images/couvert.jpg>] [1
+/images/couvert.jpg>] (./rapport.toc
+Overfull \hbox (1.1109pt too wide) in paragraph at lines 25--25
+ [][] []\OT1/cmr/m/n/10.95 Apprentissage du R^^Seseau de Neu-rones - Ap-pren-ti
+s-sage par les Exemples [][]  
+ []
 
-] [2
-
-] (./rapport.toc [3
-
-])
+)
 \tf@toc=\write3
 \openout3 = `rapport.toc'.
 
- [4] (./rapport.lof)
+ [1
+
+] (./rapport.lof)
 \tf@lof=\write4
 \openout4 = `rapport.lof'.
 
-
-[5
+ [2
 
 ] [1
 
 ]
 Chapitre 1.
-
-Overfull \hbox (2.69492pt too wide) in paragraph at lines 252--257
-\OT1/cmss/m/n/10.95 conseils d'ing^^Senierie, d^^Seveloppe des pro-duits et lo-
-gi-ciels, de la concep- tion jus-qu'au d^^Seploiement.
- []
-
-<images/archi.png, id=35, 1391.1975pt x 969.6225pt>
-File: images/archi.png Graphic file (type png)
-<use images/archi.png>
-Package pdftex.def Info: images/archi.png  used on input line 278.
-(pdftex.def)             Requested size: 341.43306pt x 237.96646pt.
+<images/prob.png, id=26, 682.55pt x 349.305pt>
+File: images/prob.png Graphic file (type png)
+<use images/prob.png>
+Package pdftex.def Info: images/prob.png  used on input line 208.
+(pdftex.def)             Requested size: 341.43306pt x 174.73734pt.
 [2
 
-]
-<images/telem.png, id=39, 803.0pt x 446.66875pt>
-File: images/telem.png Graphic file (type png)
-<use images/telem.png>
-Package pdftex.def Info: images/telem.png  used on input line 307.
-(pdftex.def)             Requested size: 341.43306pt x 189.9237pt.
- [3 <./images/archi.png>] [4 <./images/telem.png>]
+ <./images/prob.png>]
+<images/solutions.png, id=31, 469.755pt x 256.96pt>
+File: images/solutions.png Graphic file (type png)
+<use images/solutions.png>
+Package pdftex.def Info: images/solutions.png  used on input line 222.
+(pdftex.def)             Requested size: 341.43306pt x 186.76761pt.
+ [3 <./images/solutions.png>]
 Chapitre 2.
-<images/chaine.png, id=48, 602.25pt x 336.25626pt>
-File: images/chaine.png Graphic file (type png)
-<use images/chaine.png>
-Package pdftex.def Info: images/chaine.png  used on input line 361.
-(pdftex.def)             Requested size: 341.43306pt x 190.64188pt.
-[5
+[4
 
- <./images/chaine.png>]
-Overfull \hbox (1.65675pt too wide) in paragraph at lines 374--377
-[]\OT1/cmss/m/n/10.95 Comme nous nous int^^Seressons aux plaques d'im-ma-tri-cu
--la-tion ma-ro-caines, nous com-men^^Xcons
+]
+<images/agile.png, id=40, 1371.1225pt x 770.88pt>
+File: images/agile.png Graphic file (type png)
+<use images/agile.png>
+Package pdftex.def Info: images/agile.png  used on input line 282.
+(pdftex.def)             Requested size: 426.79134pt x 239.94662pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--286
+
  []
 
-<images/matricule.png, id=53, 424.58624pt x 162.6075pt>
-File: images/matricule.png Graphic file (type png)
-<use images/matricule.png>
-Package pdftex.def Info: images/matricule.png  used on input line 381.
-(pdftex.def)             Requested size: 341.43306pt x 130.7685pt.
-[6 <./images/matricule.png>] [7] [8]
-Overfull \hbox (3.6793pt too wide) in paragraph at lines 557--557
-\OT1/cmr/bx/n/10.95 elles et ses diff^^Serents syst^^Remes pro-pos^^Ses sont ba
-s^^Ses sur des pro-pri^^Set^^Ses diff^^Serentes.
- []
-
-[9] [10]
+[5 <./images/agile.png>]
 Chapitre 3.
+<images/artint.png, id=45, 526.96875pt x 288.07625pt>
+File: images/artint.png Graphic file (type png)
+<use images/artint.png>
+Package pdftex.def Info: images/artint.png  used on input line 304.
+(pdftex.def)             Requested size: 341.43306pt x 186.65831pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--329
+
+ []
+
+[6
+
+ <./images/artint.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 336
+.
+LaTeX Font Info:    No file OMScmss.fd. on input line 336.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 336.
+
+<images/data_type.png, id=50, 634.37pt x 117.43875pt>
+File: images/data_type.png Graphic file (type png)
+<use images/data_type.png>
+Package pdftex.def Info: images/data_type.png  used on input line 355.
+(pdftex.def)             Requested size: 341.43306pt x 63.20988pt.
+<images/machine.jpg, id=51, 652.4375pt x 410.53375pt>
+File: images/machine.jpg Graphic file (type jpg)
+<use images/machine.jpg>
+Package pdftex.def Info: images/machine.jpg  used on input line 376.
+(pdftex.def)             Requested size: 341.43306pt x 214.84438pt.
+[7 <./images/data_type.png>]
+<images/supervised.png, id=57, 330.23375pt x 532.99126pt>
+File: images/supervised.png Graphic file (type png)
+<use images/supervised.png>
+Package pdftex.def Info: images/supervised.png  used on input line 412.
+(pdftex.def)             Requested size: 341.43306pt x 551.08539pt.
+ [8 <./images/machine.jpg>]
+<images/python.png, id=61, 1284.8pt x 380.42125pt>
+File: images/python.png Graphic file (type png)
+<use images/python.png>
+Package pdftex.def Info: images/python.png  used on input line 427.
+(pdftex.def)             Requested size: 113.81102pt x 33.69658pt.
+ [9 <./images/supervised.png>]
+<images/tensor.png, id=66, 403.7265pt x 77.1975pt>
+File: images/tensor.png Graphic file (type png)
+<use images/tensor.png>
+Package pdftex.def Info: images/tensor.png  used on input line 436.
+(pdftex.def)             Requested size: 113.81102pt x 21.76239pt.
+<images/mysql.png, id=67, 226.9935pt x 117.603pt>
+File: images/mysql.png Graphic file (type png)
+<use images/mysql.png>
+Package pdftex.def Info: images/mysql.png  used on input line 445.
+(pdftex.def)             Requested size: 113.81102pt x 58.96284pt.
+<images/qt.png, id=68, 190.2015pt x 139.6125pt>
+File: images/qt.png Graphic file (type png)
+<use images/qt.png>
+Package pdftex.def Info: images/qt.png  used on input line 457.
+(pdftex.def)             Requested size: 113.81102pt x 83.54231pt.
+ [10 <./images/python.png> <./images/tensor.png> <./images/mysql.png> <./images
+/qt.png>]
+Chapitre 4.
+<images/intervale.png, id=77, 373.395pt x 239.39438pt>
+File: images/intervale.png Graphic file (type png)
+<use images/intervale.png>
+Package pdftex.def Info: images/intervale.png  used on input line 473.
+(pdftex.def)             Requested size: 341.43306pt x 218.9122pt.
+<images/data.png, id=78, 818.30719pt x 247.67531pt>
+File: images/data.png Graphic file (type png)
+<use images/data.png>
+Package pdftex.def Info: images/data.png  used on input line 482.
+(pdftex.def)             Requested size: 341.43306pt x 103.34265pt.
 [11
 
-]
-Overfull \hbox (21.77736pt too wide) in paragraph at lines 696--700
-[]\OT1/cmss/m/n/10.95 Une image vec-to-rielle en in-for-ma-tique, est une image
- num^^Serique com-pos^^See d'ob-jets g^^Seom^^Setriques
- []
-
-[12] [13] [14] [15] [16] [17] [18] [19]
-Chapitre 4.
-[20
-
-]
-Overfull \hbox (0.71991pt too wide) in paragraph at lines 1222--1224
-[]\OT1/cmss/m/n/10.95 Nous avons clon^^Se la derni^^Rere ver-sion d'OpenCV ici.
- Main-te-nant, ob-te-nons quelques ^^Sel^^Sements
- []
-
-
-Overfull \hbox (15.0401pt too wide) in paragraph at lines 1247--1256
-[]\OT1/cmss/m/n/10.95 pour construire une cas-cade Haar, on aura be-soin d'imag
-es "po-si-tives" et d'images "n^^Segatives".
- []
-
-[21]
-File: images/matricule.png Graphic file (type png)
-<use images/matricule.png>
-Package pdftex.def Info: images/matricule.png  used on input line 1270.
-(pdftex.def)             Requested size: 341.43306pt x 130.7685pt.
-<images/negimg.png, id=107, 1371.1225pt x 770.88pt>
-File: images/negimg.png Graphic file (type png)
-<use images/negimg.png>
-Package pdftex.def Info: images/negimg.png  used on input line 1292.
+ <./images/intervale.png>] [12 <./images/data.png>]
+<images/neural.png, id=85, 941.76843pt x 578.16pt>
+File: images/neural.png Graphic file (type png)
+<use images/neural.png>
+Package pdftex.def Info: images/neural.png  used on input line 505.
+(pdftex.def)             Requested size: 341.43306pt x 209.6107pt.
+ [13 <./images/neural.png>]
+<images/implement.png, id=89, 1371.1225pt x 770.88pt>
+File: images/implement.png Graphic file (type png)
+<use images/implement.png>
+Package pdftex.def Info: images/implement.png  used on input line 535.
 (pdftex.def)             Requested size: 341.43306pt x 191.95496pt.
- [22]
-<images/codeneg.png, id=111, 884.30376pt x 382.42876pt>
-File: images/codeneg.png Graphic file (type png)
-<use images/codeneg.png>
-Package pdftex.def Info: images/codeneg.png  used on input line 1314.
-(pdftex.def)             Requested size: 341.43306pt x 147.65858pt.
- [23 <./images/negimg.png> <./images/codeneg.png>]
-<images/training.png, id=117, 1371.1225pt x 770.88pt>
-File: images/training.png Graphic file (type png)
-<use images/training.png>
-Package pdftex.def Info: images/training.png  used on input line 1343.
-(pdftex.def)             Requested size: 341.43306pt x 191.95496pt.
-<images/matriculedetected.png, id=118, 1371.1225pt x 770.88pt>
-File: images/matriculedetected.png Graphic file (type png)
-<use images/matriculedetected.png>
-Package pdftex.def Info: images/matriculedetected.png  used on input line 1372.
+ [14 <./images/implement.png>] [15
 
-(pdftex.def)             Requested size: 341.43306pt x 191.95496pt.
- [24 <./images/training.png>]
-Overfull \hbox (21.90868pt too wide) in paragraph at lines 1378--1378
-\OT1/cmr/bx/n/14.4 ract^^Reres : en uti-li-sant Re-con-nais-sance des chiffres 
-num^^Seris^^Ses
- []
-
-
-Overfull \hbox (43.72185pt too wide) in paragraph at lines 1382--1383
-[]\OT1/cmss/m/n/10.95 Le script Text-Clea-ner de Fred Wein-haus ( http ://www.f
-mwconcepts.com/imagemagick/textcleaner/
- []
-
-[25 <./images/matriculedetected.png>]
-<images/OCR.png, id=128, 752.8125pt x 523.9575pt>
-File: images/OCR.png Graphic file (type png)
-<use images/OCR.png>
-Package pdftex.def Info: images/OCR.png  used on input line 1417.
-(pdftex.def)             Requested size: 341.43306pt x 237.64151pt.
- [26] [27 <./images/OCR.png>] [28
-
-]
-(./rapport.bbl
+] (./rapport.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [29
+) [16
 
 ] (./rapport.aux)
 
@@ -1058,24 +1073,25 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7468 strings out of 492982
- 104044 string characters out of 6134896
- 293861 words of memory out of 5000000
- 10885 multiletter control sequences out of 15000+600000
+ 7499 strings out of 492982
+ 104607 string characters out of 6134896
+ 292861 words of memory out of 5000000
+ 10908 multiletter control sequences out of 15000+600000
  12494 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,7n,42p,835b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,7n,42p,1417b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on rapport.pdf (35 pages, 4001876 bytes).
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti12.pfb>
+Output written on rapport.pdf (19 pages, 1673031 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 128 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
